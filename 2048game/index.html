@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>2048</title>
+		<link rel="stylesheet" href="css/2048.css" />
+		<script type="text/javascript" src="js/jquery-3.0.0.js" ></script>
+		<script type="text/javascript" src="js/support.js" ></script>
+		<script type="text/javascript" src="js/animation.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+		<script type="text/javascript" src="js/game.js" ></script>
+				<script>document.addEventListener('touchmove',function(ev){
+ev.preventDefault();
+},{passive:false});
+</script>
+	</head>
+	<body id="gameBody">
+		<header>
+			<h2>2048</h2>
+			<a href="javascript:newgame();" id="newgamebutton">新游戏</a>
+			<p>得分: <span id="score">0</span></p>
+		</header>
+		<div id="grid-container">
+			<div id="grid-cell-0-0" class="grid-cell"></div>
+			<div id="grid-cell-0-1" class="grid-cell"></div>
+			<div id="grid-cell-0-2" class="grid-cell"></div>
+			<div id="grid-cell-0-3" class="grid-cell"></div>
+			<div id="grid-cell-1-0" class="grid-cell"></div>
+			<div id="grid-cell-1-1" class="grid-cell"></div>
+			<div id="grid-cell-1-2" class="grid-cell"></div>
+			<div id="grid-cell-1-3" class="grid-cell"></div>
+			<div id="grid-cell-2-0" class="grid-cell"></div>
+			<div id="grid-cell-2-1" class="grid-cell"></div>
+			<div id="grid-cell-2-2" class="grid-cell"></div>
+			<div id="grid-cell-2-3" class="grid-cell"></div>
+			<div id="grid-cell-3-0" class="grid-cell"></div>
+			<div id="grid-cell-3-1" class="grid-cell"></div>
+			<div id="grid-cell-3-2" class="grid-cell"></div>
+			<div id="grid-cell-3-3" class="grid-cell"></div>
+			
+		</div>
+		
+	</body>
+	
+	
+	<script>
+		// document.addEventListener('touchmove',function(ev){
+		// ev.preventDefault();
+		// },{passive:false});
+		// var windowHeight = $(window).height(),
+		// 　　$body = $("body");
+		// 　　// console.log($(window).height()); //627
+		// 　　// console.log($('body').height()); //0
+		// 　　$body.css("height", windowHeight); //重要代码
+		
+		// 	$("body").on("touchstart", function(e) {
+		// 　　　　e.preventDefault();
+		// 　　　　startX = e.originalEvent.changedTouches[0].pageX,
+		// 　　　　startY = e.originalEvent.changedTouches[0].pageY;
+		// 　		　});
+		
+		// 　　$("body").on("touchstart", function(e) {
+		// 　　　　e.preventDefault();
+		// 　　　　moveEndX = e.originalEvent.changedTouches[0].pageX,
+		// 　　　　moveEndY = e.originalEvent.changedTouches[0].pageY,
+		// 　　　　X = moveEndX - startX,
+		// 　　　　Y = moveEndY - startY;
+		
+		// 　　　　if ( Math.abs(X) > Math.abs(Y) && X > 0 ) {
+		// 　　　　			if (moveRight()) {
+		// 					setTimeout("generateOneNumber()", 210);
+		// 					setTimeout("isgameover()", 300);
+		// 						}
+				
+		// 　　　　}
+		// 　　　　else if ( Math.abs(X) > Math.abs(Y) && X < 0 ) {
+			
+		// 			if (moveLeft()) {
+		// 								setTimeout("generateOneNumber()", 210);
+		// 								setTimeout("isgameover()", 300);
+		// 									}
+		// 　　　　}
+		// 　　　　else if ( Math.abs(Y) > Math.abs(X) && Y > 0) {
+		// 			if (moveDown()) {
+		// 								setTimeout("generateOneNumber()", 210);
+		// 								setTimeout("isgameover()", 300);
+		// 									}
+		// 　　　　}
+		// 　　　　else if ( Math.abs(Y) > Math.abs(X) && Y < 0 ) {
+		// 　　　　　					if (moveUp()) {
+		// 								setTimeout("generateOneNumber()", 210);
+		// 								setTimeout("isgameover()", 300);
+		// 									}
+		// 　　　　}
+		// 　　　　else{
+		// 　　　　　　alert("just touch");
+		// 　　　　}
+		// 　　});
+		
+		
+	</script>
+	<script>
+	    // 手机屏幕划动触发
+	    (function () {
+	      mobilwmtouch(document.getElementById('gameBody'));
+	      document
+	        .getElementById('gameBody')
+	        .addEventListener('touright', function (e) {
+	          e.preventDefault();
+		　　　			if (moveRight()) {
+							setTimeout("generateOneNumber()", 100);
+		 					setTimeout("isgameover()", 150);
+							}
+	        });
+	      document
+	        .getElementById('gameBody')
+	        .addEventListener('touleft', function (e) {
+		　　　			if (moveLeft()) {
+							setTimeout("generateOneNumber()", 100);
+		 					setTimeout("isgameover()", 150);
+							}
+	        });
+	      document
+	        .getElementById('gameBody')
+	        .addEventListener('toudown', function (e) {
+		　　　			if (moveDown()) {
+							setTimeout("generateOneNumber()", 100);
+		 					setTimeout("isgameover()", 150);
+							}
+	        });
+	      document
+	        .getElementById('gameBody')
+	        .addEventListener('touup', function (e) {
+		　　　			if (moveUp()()) {
+							setTimeout("generateOneNumber()", 100);
+		 					setTimeout("isgameover()", 150);
+							}
+	        });
+	
+	      function mobilwmtouch(obj) {
+	        var stoux, stouy;
+	        var etoux, etouy;
+	        var xdire, ydire;
+	        obj.addEventListener(
+	          'touchstart',
+	          function (e) {
+	            stoux = e.targetTouches[0].clientX;
+	            stouy = e.targetTouches[0].clientY;
+	            //console.log(stoux);
+	          },
+	          false
+	        );
+	        obj.addEventListener(
+	          'touchend',
+	          function (e) {
+	            etoux = e.changedTouches[0].clientX;
+	            etouy = e.changedTouches[0].clientY;
+	            xdire = etoux - stoux;
+	            ydire = etouy - stouy;
+	            chazhi = Math.abs(xdire) - Math.abs(ydire);
+	            //console.log(ydire);
+	            if (xdire > 0 && chazhi > 0) {
+	              console.log('right');
+	              //alert(evenzc('touright',alerts));
+	              obj.dispatchEvent(evenzc('touright'));
+	            } else if (ydire > 0 && chazhi < 0) {
+	              console.log('down');
+	              obj.dispatchEvent(evenzc('toudown'));
+	            } else if (xdire < 0 && chazhi > 0) {
+	              console.log('left');
+	              obj.dispatchEvent(evenzc('touleft'));
+	            } else if (ydire < 0 && chazhi < 0) {
+	              console.log('up');
+	              obj.dispatchEvent(evenzc('touup'));
+	            }
+	          },
+	          false
+	        );
+	
+	        function evenzc(eve) {
+	          if (typeof document.CustomEvent === 'function') {
+	            this.event = new document.CustomEvent(eve, {
+	              //自定义事件名称
+	              bubbles: false, //是否冒泡
+	              cancelable: false, //是否可以停止捕获
+	            });
+	            if (!document['evetself' + eve]) {
+	              document['evetself' + eve] = this.event;
+	            }
+	          } else if (typeof document.createEvent === 'function') {
+	            this.event = document.createEvent('HTMLEvents');
+	            this.event.initEvent(eve, false, false);
+	            if (!document['evetself' + eve]) {
+	              document['evetself' + eve] = this.event;
+	            }
+	          } else {
+	            return false;
+	          }
+	
+	          return document['evetself' + eve];
+	        }
+	      }
+	    })();
+	  </script>
+	
+	
+	
+	
+</html>
+

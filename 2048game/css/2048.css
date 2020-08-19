@@ -1,0 +1,103 @@
+header{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+header h2{
+	font-family: arial;
+	font-size: 100px;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+header #newgamebutton{
+	display: block;
+	margin: 2px auto;
+	width: 230px;
+	height: 100px;
+	padding: 5px 5px;
+	background-color:#8F7A66;
+	font-family: 100px;
+	font-size: 60px;
+		line-height: 100px;
+	color: white;
+	border-radius: 18px;
+	text-decoration: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+header #newgamebutton:hover{
+	background-color: #9f8b77;
+}
+header p{
+	font-family: arial;
+	font-size: 100px;
+	margin: 50px auto;
+}
+#grid-container{
+	width: 1000px;
+	height: 1000px;
+	padding: 20px;
+	margin: 5px auto;
+	border-radius: 20px;
+	background-color: #9F8B77;
+	position: relative;
+}
+.grid-cell{
+	width: 220px;
+	height: 220px;
+	border-radius: 18px;
+	background-color: #ccc0b3;
+	position: absolute;
+}
+.number-cell{
+	border-radius: 18px;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 100px;
+	position: absolute;
+	text-align: center;
+}
+#gameover {
+    display: block;
+    margin: 0px auto;
+    width: 800px;
+    height: 860px;
+    text-align: center;
+    top: 10px;
+	left: 127.5px;
+	z-index:9999;
+    position: absolute;
+}
+#gameover p {
+    font-family: Arial;
+    font-size: 100px;
+    color: white;
+    margin: 25px 0 0 50;
+    margin-top: 40px;
+}
+#scor{
+	font-size: 35px;
+}
+#gameover span {
+    font-family: Arial;
+    font-size: 100px;
+    color: white;
+    margin: 50px auto;
+}
+#restartgamebutton {
+    display: block;
+    margin: 90px auto;
+    width: 400px;
+    padding: 10px 10px;
+    background-color: #8f7a66;
+    font-family: Arial;
+    font-size: 100px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#restartgamebutton:hover {
+    background-color: #9f8b77;
+}

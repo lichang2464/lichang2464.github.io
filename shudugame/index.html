@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html lang="en" manifest="cache/sudoku.appcache">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>数独-7724游戏</title>
+<link rel="stylesheet" type="text/css" href="css/s.min.css">
+</head>
+<body><script src="//play.7724.com/olgames/code_statistics/7724loading.js" language="JavaScript"></script>
+ 
+<div id="container">
+  <div id="room" class="page">
+    <header class="header">
+      <div id="restartTrigger"><i class="icon"></i></div>
+      <span id="time">0:00</span>
+      <div id="menu"><i class="icon"></i></div>
+    </header>
+    <div id="chessboard">
+      <div id="grids"></div>
+      <div id="dialog"><span data-val="1" class="num">1 <i class="m"></i></span> <span data-val="2" class="num">2 <i class="m"></i></span> <span data-val="3" class="num">3 <i class="m"></i></span> <span data-val="4" class="num">4 <i class="m"></i></span> <span data-val="5" class="num">5 <i class="m"></i></span> <span data-val="6" class="num">6 <i class="m"></i></span> <span data-val="7" class="num">7 <i class="m"></i></span> <span data-val="8" class="num">8 <i class="m"></i></span> <span data-val="9" class="num">9 <i class="m"></i></span> <span id="d-clear"><i class="iconfont">&#xf029a;</i> 清除</span> <span id="d-mark"><i class="iconfont">&#xf029b;</i> 标记</span></div>
+    </div>
+    <div id="win" class="confirm hide">
+      <div class="inner">
+        <h2>恭喜过关</h2>
+        <p>难度：<em class="lv">1</em></p>
+        <p>用时：<em class="time">12:00</em></p>
+        <div class="btn js-nextLv">下一关</div>
+      </div>
+    </div>
+    <div id="con_restart" class="confirm hide">
+      <div class="inner">
+        <h3>重新开始？</h3>
+        <p>重新开始会清除现在输入的所有数据</p>
+        <span id="restart" class="btn">重来</span> <span class="btn js-close">返回</span></div>
+    </div>
+  </div>
+  <div id="lvList" class="page">
+    <div id="difficulty">
+      <div data-lv="0" class="btn">入门 <span></span></div>
+      <div data-lv="1" class="btn">初级 <span></span></div>
+      <div data-lv="2" class="btn">中级 <span></span></div>
+      <div data-lv="3" class="btn">高级 <span></span></div>
+      <div data-lv="4" class="btn">骨灰级 <span></span></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>sudoku 1.0.1</p>
+  </footer>
+</div>
+<div id="share"><img src="img/share.png" alt=""></div>
+</body>
+</html>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/s.min.js"></script>
