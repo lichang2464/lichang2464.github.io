@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <title>A third of the fantasy</title>
+</head>
+
+<head>
+    <title>websocket client</title>
+    <script type="text/javascript">
+        var start = function () {
+            var inc = document.getElementById('incomming');
+            var wsImpl = window.WebSocket || window.MozWebSocket;
+            var form = document.getElementById('sendForm');
+            var input = document.getElementById('sendText');
+
+            inc.innerHTML += "connecting to server ..<br/>";
+
+            // create a new websocket and connect
+            // window.ws = new wsImpl('ws://192.168.1.113:7181/');
+            // window.ws = new wsImpl('ws://buguoheng.com/wss/server');
+            window.ws = new wsImpl('ws://127.0.0.1:8091/');
+
+            // when data is comming from the server, this metod is called
+            ws.onmessage = function (evt) {
+                inc.innerHTML += evt.data + '<br/>';
+            };
+
+            // when the connection is established, this method is called
+            ws.onopen = function () {
+                inc.innerHTML += '.. connection open<br/>';
+            };
+
+            // when the connection is closed, this method is called
+            ws.onclose = function () {
+                inc.innerHTML += '.. connection closed<br/>';
+            }
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var val = input.value;
+                ws.send(val);
+                input.value = "";
+            });
+
+        }
+        window.onload = start;
+    </script>
+</head>
+<body>
+    <form id="sendForm">
+        <input id="sendText" placeholder="Text to send" />
+    </form>
+    <pre id="incomming"></pre>
+  <a href="index3.html">index3 录音</a>
+  <br />
+  <a href="a.png">far picture</a>
+</body>
+</html>
