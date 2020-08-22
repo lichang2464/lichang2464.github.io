@@ -192,7 +192,7 @@ function isgameover() {
 }
 
 function gameover() {
-    $("#grid-container").append("<div id='gameover'><p>游戏结束</p><p id='scor'>本次得分</p><span>" + score + "</span><a href='javascript:restartgame();' id='restartgamebutton'>Restart</a></div>");
+    $("#grid-container").append("<div id='gameover'><p style='color: #79a8ae'>宝贝真厉害</p><p id='scor'>得了怎么多分</p><span>" + score + "</span><a href='javascript:restartgame();' id='restartgamebutton' style='font-size: 80px'>再来一次</a></div>");
     var gameover = $("#gameover");
     gameover.css("width", "800px");
     gameover.css("height", "860px");

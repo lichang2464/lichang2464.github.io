@@ -91,23 +91,35 @@ html{
 	transform: rotateX(-90deg) translateZ(150px);
 }
 /*鼠标移入后样式*/
+.cube:hover .pic{
+	width: 600px;
+	height: 600px;
+}
+.cube:hover div{
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	opacity: 0.8;
+	transition: all .4s;
+}
 .cube:hover .out_front{
-	transform: rotateY(0deg) translateZ(500px);
+	transform: rotateY(0deg) translateZ(400px);
+
 }
 .cube:hover .out_back{
-	transform: translateZ(-500px) rotateY(180deg);
+	transform: translateZ(-400px) rotateY(180deg);
 }
 .cube:hover .out_left{
-	transform: rotateY(90deg) translateZ(500px);
+	transform: rotateY(90deg) translateZ(400px);
 }
 .cube:hover .out_right{
-	transform: rotateY(-90deg) translateZ(500px);
+	transform: rotateY(-90deg) translateZ(400px);
 }
 .cube:hover .out_top{
-	transform: rotateX(90deg) translateZ(500px);
+	transform: rotateX(90deg) translateZ(400px);
 }
 .cube:hover .out_bottom{
-	transform: rotateX(-90deg) translateZ(500px);
+	transform: rotateX(-90deg) translateZ(400px);
 }
 .hovertreeinfo{text-align:center;}
 .hovertreeinfo a{color:white}
