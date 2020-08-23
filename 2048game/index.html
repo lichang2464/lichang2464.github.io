@@ -16,7 +16,7 @@ ev.preventDefault();
 	</head>
 	<body id="gameBody">
 		<header>
-			<p class="text" style="color: #ed3073;font-size: 75px">我们已经相爱了
+			<p class="text" style="color: #ed3073;font-size: 75px"><a href="../index.html" style="color: #ed3073;font-size: 75px;text-decoration:none;">你已经爱我</a>
 				<span id="span_dt_dt"></span>
 			</p>
 			<script language="javascript">
@@ -35,12 +35,12 @@ ev.preventDefault();
 					e_minsold = (e_hrsold - hrsold) * 60;
 					minsold = Math.floor((e_hrsold - hrsold) * 60);
 					seconds = Math.floor((e_minsold - minsold) * 60);
-					span_dt_dt.innerHTML = daysold + " 天 " + hrsold + " 小时 " + minsold + " 分 " + seconds + " 秒 ";
+					span_dt_dt.innerHTML = daysold + " 天 " + hrsold + " 小时 " + minsold + " 分 " + seconds + " 秒了";
 				}
 				show_date_time();
 			</script>
-			<a href="javascript:newgame();" id="newgamebutton">新游戏</a>
-			<p>得分: <span id="score">0</span></p>
+			<a href="javascript:newgame();" id="newgamebutton">新游戏 </a>
+			<p style="color: palevioletred"><span style="color: red">❤</span>宝贝得分: <span id="score" style="color: red">0</span></p>
 		</header>
 		<div id="grid-container">
 			<div id="grid-cell-0-0" class="grid-cell"></div>
@@ -61,6 +61,30 @@ ev.preventDefault();
 			<div id="grid-cell-3-3" class="grid-cell"></div>
 			
 		</div>
+		<div style="position:absolute;left:0px;bottom:0px;">
+			<!-- 隐藏播放条：删除ontrols="controls"部分 -->
+			<audio autoplay="autopaly" loop="loop"  controls="controls" id="audios">
+				<source src="../music/G.E.M.邓紫棋%20-%20喜欢你.mp3" type="audio/mp3" />
+			</audio>
+		</div>
+		<script>
+			var music = document.getElementById('video');
+			var state = 0;
+			document.addEventListener('touchstart', function(){
+				if(state==0){
+					music.play();
+					state=1;
+				}
+			}, false);
+			document.addEventListener("WeixinJSBridgeReady", function () {
+				music.play();
+			}, false);
+			//循环播放
+			music.onended = function () {
+				music.load();
+				music.play();
+			}
+		</script>
 		
 	</body>
 	

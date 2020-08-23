@@ -9,17 +9,18 @@
 <link rel="stylesheet" type="text/css" href="css/s.min.css">
 </head>
 <body><script src="//play.7724.com/olgames/code_statistics/7724loading.js" language="JavaScript"></script>
- 
+
 <div id="container">
   <div id="room" class="page">
     <header class="header">
       <div id="restartTrigger"><i class="icon"></i></div>
       <span style="color: #990000">❤</span><span id="time">0:00</span><span style="color: #990000">❤</span>
+
       <div id="menu"><i class="icon"></i></div>
     </header>
     <div id="chessboard">
       <div id="grids"></div>
-      <div id="dialog"><span data-val="1" class="num">1 <i class="m"></i></span> <span data-val="2" class="num">2 <i class="m"></i></span> <span data-val="3" class="num">3 <i class="m"></i></span> <span data-val="4" class="num">4 <i class="m"></i></span> <span data-val="5" class="num">5 <i class="m"></i></span> <span data-val="6" class="num">6 <i class="m"></i></span> <span data-val="7" class="num">7 <i class="m"></i></span> <span data-val="8" class="num">8 <i class="m"></i></span> <span data-val="9" class="num">9 <i class="m"></i></span> <span id="d-clear"><i class="iconfont">&#xf029a;</i> ❤清除❤</span> <span id="d-mark"><i class="iconfont">&#xf029b;</i> ❤标记❤</span></div>
+      <div id="dialog"><span data-val="1" class="num">1 <i class="m"></i></span> <span data-val="2" class="num">2 <i class="m"></i></span> <span data-val="3" class="num">3 <i class="m"></i></span> <span data-val="4" class="num">4 <i class="m"></i></span> <span data-val="5" class="num">5 <i class="m"></i></span> <span data-val="6" class="num">6 <i class="m"></i></span> <span data-val="7" class="num">7 <i class="m"></i></span> <span data-val="8" class="num">8 <i class="m"></i></span> <span data-val="9" class="num">9 <i class="m"></i></span> <span id="d-clear"><i class="iconfont"></i>❤清除❤</span> <span id="d-mark"><i class="iconfont"></i>❤标记❤</span></div>
     </div>
     <div id="win" class="confirm hide">
       <div class="inner">
@@ -43,12 +44,52 @@
       <div data-lv="2" class="btn">❤中级❤ <span></span></div>
       <div data-lv="3" class="btn">❤高级❤ <span></span></div>
       <div data-lv="4" class="btn">❤骨灰级❤ <span></span></div>
+      <div data-lv="5" class="btn"><a href="../index.html" style="color: #990000;text-decoration:none;">❤主页面❤</a> <span></span></div>
+      <div data-lv="5" class="btn"><a href="../2048game/index.html" style="color: #990000;text-decoration:none;" >❤2048❤</a> <span></span></div>
+      <div data-lv="6"  style="    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative" >
+
+        <div style="left:0px;bottom:0px;">
+          <!-- 隐藏播放条：删除ontrols="controls"部分 -->
+          <audio autoplay="autopaly" loop="loop"  controls="controls" id="audios">
+            <source src="../music/G.E.M.邓紫棋%20-%20喜欢你.mp3" type="audio/mp3" />
+          </audio>
+        </div>
+        <script>
+          var music = document.getElementById('video');
+          var state = 0;
+          document.addEventListener('touchstart', function(){
+            if(state==0){
+              music.play();
+              state=1;
+            }
+          }, false);
+          document.addEventListener("WeixinJSBridgeReady", function () {
+            music.play();
+          }, false);
+          //循环播放
+          music.onended = function () {
+            music.load();
+            music.play();
+          }
+        </script></div>
+
     </div>
   </div>
+
   <footer class="footer">
     <p><span style="color: #990000">❤</span>宝贝周年快乐啊<span style="color: #990000">❤</span></p>
     <p><span style="color: #990000">❤</span>超级超级爱你<span style="color: #990000">❤</span></p>
   </footer>
+
 </div>
 </body>
 </html>

@@ -2,56 +2,80 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>XXX-情人节</title>
+		<title>宝贝周年快乐❤</title>
 		<link rel="stylesheet" href="./css/hovertree.css" />
 	</head>
 	<body>
 		<div class="hovertreeinfo">
-			<h1 style="font-size: 60px;">XXX--情人节快乐</h1>
+			<a href="../index.html" style="text-decoration:none;"><p class="text" style="color:yellow;font-size: 60px">我已经爱你
+				<span id="span_dt_dt"></span>
+			</p></a>
+			<script language="javascript">
+				function show_date_time() {
+					window.setTimeout("show_date_time()", 1000);
+					BirthDay = new Date("08/24/2018 22:23:52");
+					today = new Date();
+					timeold = (today.getTime() - BirthDay.getTime());
+					sectimeold = timeold / 1000
+					secondsold = Math.floor(sectimeold);
+					msPerDay = 24 * 60 * 60 * 1000
+					e_daysold = timeold / msPerDay
+					daysold = Math.floor(e_daysold);
+					e_hrsold = (e_daysold - daysold) * 24;
+					hrsold = Math.floor(e_hrsold);
+					e_minsold = (e_hrsold - hrsold) * 60;
+					minsold = Math.floor((e_hrsold - hrsold) * 60);
+					seconds = Math.floor((e_minsold - minsold) * 60);
+					span_dt_dt.innerHTML = daysold + " 天 " + hrsold + " 小时 " + minsold + " 分 " + seconds + " 秒了";
+				}
+				show_date_time();
+			</script>
 		</div>
+
+
 		<!--/*外层最大容器*/-->
 		<div class="wrap">
 			<!--	/*包裹所有元素的容器*/-->
 			<div class="cube">
 				<!--前面图片 -->
 				<div class="out_front">
-					<img src="img/img01.jpg " class="pic" />
+					<img src="img/she2.jpg " class="pic" />
 				</div>
 				<!--后面图片 -->
 				<div class="out_back">
-					<img src="img/img02.jpg" class="pic"/>
+					<img src="img/we.jpg" class="pic"/>
 				</div>
 				<!--左图片 -->
 				<div class="out_left">
-					<img src="img/img03.jpg" class="pic" />
+					<img src="img/she1.jpg" class="pic" />
 				</div>
 				<div class="out_right">
-					<img src="img/img04.jpg" class="pic" />
+					<img src="img/we2.jpg" class="pic" />
 				</div>
 				<div class="out_top">
-					<img src="img/img05.jpg" class="pic" />
+					<img src="img/she3.jpg" class="pic" />
 				</div>
 				<div class="out_bottom">
-					<img src="img/img06.jpg" class="pic" />
+					<img src="img/we3.jpg" class="pic" />
 				</div>
 				<!--小正方体 -->
 				<span class="in_front">
-					<img src="img/img07.jpg" class="in_pic" />
+					<img src="img/she5.jpg" class="in_pic" />
 				</span>
 				<span class="in_back">
-					<img src="img/img08.jpg" class="in_pic" />
+					<img src="img/me.jpg" class="in_pic" />
 				</span>
 				<span class="in_left">
-					<img src="img/img09.jpg" class="in_pic" />
+					<img src="img/she6.jpg" class="in_pic" />
 				</span>
 				<span class="in_right">
-					<img src="img/img10.jpg" class="in_pic" />
+					<img src="img/me2.jpg" class="in_pic" />
 				</span>
 				<span class="in_top">
-					<img src="img/img11.jpg" class="in_pic" />
+					<img src="img/6720ccf9020377e1.jpg" class="in_pic" />
 				</span>
 				<span class="in_bottom">
-					<img src="img/img12.jpg" class="in_pic" />
+					<img src="img/she4.jpg" class="in_pic" />
 				</span>
 			</div>
 		</div>

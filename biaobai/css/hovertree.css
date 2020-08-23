@@ -32,7 +32,7 @@ html{
 	position: absolute;
 	width: 500px;
 	height: 500px;
-	opacity: 0.8;
+	opacity: 95%;
 	transition: all .4s;
 }
 /*定义所有图片样式*/
