@@ -4,12 +4,21 @@
 		<meta charset="utf-8" />
 		<title>宝贝周年快乐❤</title>
 		<link rel="stylesheet" href="./css/hovertree.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<div class="hovertreeinfo">
+	<canvas id="c1"></canvas>
+	<canvas id="c2"></canvas>
+	<script src="js/index.js"></script>
+
+	<div>
+		<div class="hovertreeinfo" style="position: relative;">
 			<a href="../index.html" style="text-decoration:none;"><p class="text" style="color:yellow;font-size: 60px">我已经爱你
 				<span id="span_dt_dt"></span>
 			</p></a>
+
 			<script language="javascript">
 				function show_date_time() {
 					window.setTimeout("show_date_time()", 1000);
@@ -31,7 +40,7 @@
 				show_date_time();
 			</script>
 		</div>
-
+	</div>
 
 		<!--/*外层最大容器*/-->
 		<div class="wrap">
@@ -79,13 +88,6 @@
 				</span>
 			</div>
 		</div>
-		<!-- 网易云外链音  乐 -->
-		<!-- 只有发布和编译到端口才会自动播放 -->
-<!--		<div style="position:absolute;right:0px;bottom:0px;">
-			<iframe frameborder="no" border="0" marginwidth="0" marginheight="100%" width=330 height=86
-				src="//music.163.com/outchain/player?type=2&id=1370748318&auto=1&height=66"></iframe>
-		</div>-->
-		<!-- 本地音乐，双击index.html -->
 		<div style="position:absolute;left:0px;bottom:0px;">
 			<!-- 隐藏播放条：删除ontrols="controls"部分 -->
 			<audio autoplay="autopaly" loop="loop"  controls="controls" id="audios">
