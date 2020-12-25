@@ -87,8 +87,7 @@ ev.preventDefault();
 		</script>
 		
 	</body>
-	
-	
+
 	<script>
 	</script>
 	<script>
@@ -152,13 +151,17 @@ ev.preventDefault();
 	            chazhi = Math.abs(xdire) - Math.abs(ydire);
 	            //console.log(ydire);
 	            if (xdire > 0 && chazhi > 0) {
+	            
 	              //alert(evenzc('touright',alerts));
 	              obj.dispatchEvent(evenzc('touright'));
 	            } else if (ydire > 0 && chazhi < 0) {
+
 	              obj.dispatchEvent(evenzc('toudown'));
 	            } else if (xdire < 0 && chazhi > 0) {
+
 	              obj.dispatchEvent(evenzc('touleft'));
 	            } else if (ydire < 0 && chazhi < 0) {
+
 	              obj.dispatchEvent(evenzc('touup'));
 	            }
 	          },
@@ -195,4 +198,3 @@ ev.preventDefault();
 	
 	
 </html>
-
