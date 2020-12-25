@@ -97,7 +97,7 @@ function  sda(i) {
         return "遇"
     }
     if(i==64){
-        return "有"
+        return "友"
     }
     if(i==128){
         return "心"
