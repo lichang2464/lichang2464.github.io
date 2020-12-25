@@ -85,10 +85,10 @@ function  sda(i) {
         return "李"
     }
     if(i==4){
-        return "张"
+        return "畅"
     }
     if(i==8){
-        return "畅"
+        return "张"
     }
     if(i==16){
         return "晶"
