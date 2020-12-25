@@ -70,7 +70,7 @@ function updateBoardView() {
                 numberCell.css("left", getPosLeft(i, j));
                 numberCell.css("background-color", getNumberBackgroundColor(board[i][j]));
                 numberCell.css("color", getNumberColor(board[i][j]));
-                numberCell.text(board[i][j]);
+                numberCell.text(sda(board[i][j]));
             }
 
             hasConflicted[i][j] = false;
@@ -80,7 +80,44 @@ function updateBoardView() {
     $(".number-cell").css("line-height", "220px");
     $(".number-cell").css("font-size", "130px");
 }
-
+function  sda(i) {
+    if(i==2){
+        return "李"
+    }
+    if(i==4){
+        return "张"
+    }
+    if(i==8){
+        return "畅"
+    }
+    if(i==16){
+        return "晶"
+    }
+    if(i==32){
+        return "遇"
+    }
+    if(i==64){
+        return "有"
+    }
+    if(i==128){
+        return "心"
+    }
+    if(i==256){
+        return "爱"
+    }
+    if(i==512){
+        return "恋"
+    }
+    if(i==1024){
+        return "思"
+    }
+    if(i==2048){
+        return "婚"
+    }
+    if(i==4096){
+        return "家"
+    }
+}
 function generateOneNumber() {
     if (nospace(board)) {
         return false;
@@ -101,7 +138,7 @@ function generateOneNumber() {
 
     //在随机位置显示随机数字
     board[randx][randy] = randNumber;
-    ShowNumberWithAnimation(randx, randy, randNumber);
+    ShowNumberWithAnimation(randx, randy, sda(randNumber));
 
     return true;
 }
