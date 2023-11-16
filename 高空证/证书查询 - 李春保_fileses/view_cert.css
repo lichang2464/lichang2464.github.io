@@ -1,0 +1,190 @@
+@CHARSET "UTF-8";
+.content {
+	width: 100%;
+
+}
+
+.container {
+	/*box-shadow: 3px 3px 3px rgb(0 0 0/ 10%);
+	background-color: #FFFFFF;*/
+	width: 1100px;
+	margin: 2rem auto;
+	padding-top: 2rem;
+	border-radius: 8px;
+}
+
+.view_top {
+	text-align: center;
+	border-bottom: 1px solid #CACDD1;
+	padding-bottom: 2rem;
+	width: 700px;
+	margin: 1rem auto;
+}
+
+.view_top>img:first-child {
+	height: 100px;
+	margin-right: 2rem;
+}
+
+.view_top>img:last-child {
+	height: 65px;
+}
+
+.cert_box {
+	width: 700px;
+	margin: 2rem auto;
+}
+
+.cert_box>p, .cert_box>h3 {
+	display: block;
+	text-align: center;
+}
+
+.cert_box>h3 {
+	font-weight: 600;
+	color: red;
+	font-size: 22px;
+	letter-spacing: 6px;
+}
+
+.cert_box>p {
+	line-height: 40px;
+	font-size: 16px;
+}
+
+.btns {
+	text-align: right;
+	width: 700px;
+	height: 100px;
+	margin-top: 2rem;
+}
+
+.btns>a {
+	border: 1px solid #016DD9;
+	background-color: #016DD9;
+	color: #FFFFFF;
+	margin-left: 25px;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.btns>a:first-child {
+	background-color: #FFFFFF;
+	color: #016DD9;
+	font-weight: 600;
+}
+
+.btns>a>img {
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
+	margin-right: 4px;
+	margin-top: -4px;
+}
+
+
+#cert_info {
+	width: 700px;
+	height: 969px;
+	background-image: url(/lichang2464.github.io/高空证/skin.js_zhengshu.images/zhengshu_bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	padding: 36px 30px 0 40px;
+}
+
+#cert_info .cart_name {
+	font-size: 28px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.user_info, .user_img {
+	display: inline-block;
+	min-height: 150px;
+	vertical-align: top;
+	margin-top: 270px;
+}
+
+.user_info {
+	width: 400px;
+	padding-left: 66px;
+}
+
+.user_img {
+	width: 150px;
+}
+
+.user_img>img {
+	border: 1px solid #EEEEEE;
+	width: 120px;
+	height: 144px;
+}
+
+.user_info>p {
+	font-size: 16px;
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+.user_info>p>span {
+	font-size: 16px;
+	display: inline-block;
+	width: 70px;
+	text-align: right;
+}
+
+.intro {
+	width: 500px;
+	margin: 2rem auto;
+	text-indent: 2rem;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 30px;min-height: 100px;
+}
+
+.cert_code, .cert_unit {
+	vertical-align: top;
+	display: inline-block;
+	height: 200px;
+}
+
+.cert_code {
+	text-align: center;
+	width: 300px;
+}
+
+.cert_code>img {
+	height: 150px;
+	width: 150px;
+	display: inline-block;
+}
+
+.cert_code>p {
+	font-size: 14px;
+}
+
+.cert_unit {
+	font-size: 16px;
+	font-weight: 600;
+	width: 300px;
+	margin-top: 36px;
+}
+
+.cert_unit>div {
+	margin-bottom: 6px;
+}
+
+.cert_unit>div img {
+	width: 150px;
+	height: 150px;
+}
+
+.cert_unit>div span {
+	margin-right: 6px;
+}
+.code{width: 160px !important;height: 160px !important;margin-left: 0px;margin-top: -50px;}
