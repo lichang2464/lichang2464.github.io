@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://www.chengjian.org.cn/chaxun/34278.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.5, user-scalable=no">
+<title>证书查询 - 张西荣</title>
+<meta name="keywords" content="建筑机械类职业技能鉴定，技工技能鉴定，工程师岗位鉴定，岗位证书">
+<meta name="description" content="建筑机械类技工技能鉴定，工程师岗位鉴定，岗位证书">
+<link href="证书查询%20-%20李春保_fileses/view_cert.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="证书查询%20-%20李春保_fileses/card.css">
+<link rel="stylesheet" type="text/css" href="证书查询%20-%20李春保_fileses/button.css">
+<style type="text/css">
+
+body {
+	min-width: 360px !important;
+	background-color: #F6F6F6; min-width: 1200px;
+  -webkit-touch-callout: none; /*系统默认菜单被禁用*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -khtml-user-select: none; /*早起浏览器*/
+  -moz-user-select: none; /*火狐浏览器*/
+  -ms-user-select: none; /*IE浏览器*/
+  user-select: none; /*用户是否能够选中文本*/
+  background-image: url('https://www.chengjian.org.cn/skin/js_zhengshu/images/zhengshu_bg-line.png');background-repeat-y:no-repeat;width: 100%;height: 100%;top: 0;left: 0; z-index: 2;
+}
+
+.Book_box{
+    margin: 2rem auto;
+	width: 675px;
+	height: 470px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-size: 16px;
+	padding: 10px 0px 0 45px;
+	background-image: url(https://www.chengjian.org.cn/skin/js_zhengshu/images/book_bg.jpg);
+	}
+	
+#Pcert_infos{
+	font-size: 16px;
+	padding: 3px 0px 0 10px;
+	}
+
+.Puser_photo {
+	padding-left:10px;
+
+}
+
+.Puser_photo>img {
+	border: 0px solid #EEEEEE;
+	width: 114px;
+	height: 148px;
+	margin-top:18px;
+	float:left;
+	
+}
+
+.Puser_img {
+	padding-left:160px;
+	margin-top:40px;
+}
+
+.Puser_img>img {
+	border: 0px solid #EEEEEE;
+	width: 95px;
+	height: 95px;
+
+}
+
+
+.Puser_title {
+	width: 160px;
+	font-size: 18px;
+	height: 36px;
+	float:left;
+	display:inline-block;
+	position:relative;
+}
+
+.Puser_title p{
+	width: 160px;
+	padding-left:44px;
+	font-size: 18px;
+    position:absolute; bottom:3px; right:0px;
+}
+
+.Puser_title>p span{
+	font-size: 18px;
+	margin-right: 14px;
+}
+
+
+
+.Puser_sex {
+	width: 50px;
+	font-size: 18px;
+	height: 46px;
+	margin-top:10px;
+	float:left;
+	display:inline-block;
+}
+
+.Puser_sex p{
+	width: 50px;
+	padding-left:50px;
+	font-size: 18px;
+    
+}
+
+
+
+.Puser_shengri {
+	width: 50px;
+	font-size: 16px;
+	height: 39px;
+	margin-top:58px;
+	padding-left:85px;	
+	height:35px;
+}
+
+.Puser_shengri p{
+	width: 50px;
+}
+.Puser_shengri>p span{
+	font-size: 16px;
+	margin-right: 14px;
+
+}
+
+
+.Puser_info {
+	width: 300px;
+	padding-left: 65px;
+	padding-top: 26px;
+	font-size: 16px;
+	display: inline-block;
+	
+}
+
+.Puser_info>p {
+	font-size: 16px;
+	display: block;
+	line-height:48px;
+	padding-left: 80px;
+}
+
+.Puser_info>p>span {
+	font-size: 16px;
+	display: inline-block;
+	text-align: right;
+}
+
+.Pcert_code, .Pcert_unit {
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+
+}
+
+.Pcert_code {
+	width: 300px;
+    margin-top:0px;
+
+}
+
+
+.Pcert_code>p {
+	font-size: 16px;
+	display: block;
+	line-height:48px;
+	margin-left:20px;
+
+}
+
+.Pcert_code>p span{
+	font-size: 16px;
+    padding-left: 35px;
+	display:inline-block;
+}
+.Pcert_unit {
+	padding-left:70px;
+	 margin-top:27px;
+	width: 310px;
+}
+.Pcert_unit p{
+	font-size: 16px;
+	line-height:48px;
+}
+
+
+
+.Pcert_unit>div {
+	margin-bottom: 0px;
+}
+
+
+.Pcert_unit>div span {
+	font-size:16px;
+	padding-right: 32px;
+
+}
+
+.Pcert_unit>div>p span {
+	font-size: 20px;
+	padding-right: 32px;
+	color: red;
+}
+
+
+
+.books_code {
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	margin-top:26px;
+
+}
+
+.books_unit {
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	margin-top:26px;
+
+}
+
+.books_code {
+	width: 280px;
+	margin-left:0px;
+   
+}
+
+
+.books_code>p {
+	font-size: 16px;
+	display: block;
+	line-height:48px;
+	margin-left:20px;
+
+}
+
+.books_code>p span{
+	font-size:20px;
+    padding-left: 35px;color: red;
+}
+
+
+.books_unit {
+	width: 300px;
+	margin-left:15px;
+
+}
+.books_unit p{
+	font-size: 16px;
+	line-height:48px;
+	margin-left:68px;
+}
+
+
+
+.books_unit>div {
+	margin-bottom: 0px;
+}
+
+
+.books_unit>div span {
+	font-size:16px;
+	padding-right: 32px;
+
+}
+
+.books_unit>div>p span {
+	font-size: 20px;
+	padding-right: 32px;
+	color: red;
+}
+
+
+.gangwei {
+	width: 300px;
+	height: 36px;
+	float:left;
+	display:inline-block;
+	position:relative;
+}
+
+.gangwei p{
+	width: 300px;
+	padding-left:63px;
+	font-size: 16px;
+	line-height: 22px;
+    position:absolute; bottom:5px; right:0px;
+}
+
+
+
+.btns{
+        text-align: center;
+  	margin: 2rem auto;
+	width: 650px;
+    margin:0 auto;
+    font-size: 56px;
+    display: block;
+}
+
+
+
+
+
+#Book{
+
+	margin: 2rem auto;
+	width: 1400px;
+	height: 2100px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	background-color: #CCFFFF;
+	text-align: center;
+	padding: 150px 0 0 0;
+	}
+.book1_info{
+    text-align: left;
+	background-image: url(https://www.chengjian.org.cn/skin/js_zhengshu/images/book1_bg.jpg);
+	margin:auto;
+	width: 1300px;
+	height:850px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	padding: 110px 0px 0 200px; 
+	
+	}
+	
+.book1_info, .book1_img {
+	display: inline-block;
+	min-height: 150px;
+	vertical-align: top;
+		
+
+}
+
+.book1_info>p {
+	font-size:35px;
+	margin-bottom:10px;
+	font-weight: 600;
+	letter-spacing:4px;
+}
+
+.book1_info>p>span {
+	font-size:35px;
+	display: inline-block;
+	color:#044F8C;
+	margin-top:3px;
+	letter-spacing:4px;
+}
+
+.book1_info a {
+	font-size:35px;
+	display: inline-block;
+	margin-top:3px;
+	letter-spacing:4px;
+}
+
+
+
+.book2_info{
+	background-image: url(https://www.chengjian.org.cn/skin/js_zhengshu/images/book2_bg.jpg);
+	margin: 2rem auto;
+	width: 1300px;
+	height:850px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	padding: 110px 0px 0 200px; 
+	 text-align: left;
+	}
+
+.book2_info, .book2_img {
+	display: inline-block;
+	min-height: 150px;
+	vertical-align: top;
+	margin-top:150px;
+
+}
+
+.book2_info>p {
+	font-size:35px;
+	margin-bottom:10px;
+	font-weight: 600;
+	letter-spacing:1px;
+	width: 925px;
+}
+
+.book2_info>p>span {
+	font-size:35px;
+	display: inline-block;
+	color:#044F8C;
+	margin-top:4px;
+	letter-spacing:3px;
+}
+	
+.book2_info a {
+	font-size:35px;
+	display: inline-block;
+	margin-top:3px;
+	letter-spacing:4px;
+}
+
+
+.book_code {
+	display: inline-block;
+	text-align: center;	
+}
+.book_code>img {
+	height: 200px;
+	width: 200px;
+	margin-top:0px;
+	margin-left:180px;
+}
+.book_code>p {
+	margin-top:0px;
+	margin-left:180px;
+	font-size:35px;	
+	color:#044F8C;
+}
+.book_code>p>span {
+	font-size:35px;
+	margin-left:200px;
+}
+
+
+
+
+.book_zhang {
+	display: inline-block;
+	text-align: center;	
+}
+.book_zhang>img {
+	height: 200px;
+	width: 200px;
+	margin-top:-270px;
+	margin-left:0px;
+}
+
+.book_img {
+	display: inline-block;
+	margin-top:-350px;
+	
+}
+
+.book_img>img {
+	border: 0px solid #EEEEEE;
+	width: 245px;
+	margin-left:490px;	
+	z-index:3;
+}
+.book_img>p {
+	margin-top:20px;
+	width: 220px;
+	height: 220px;
+	margin-left:50px;	
+}
+
+.tishi {
+    
+	width: 780px;
+	height: 50px;
+	margin: 1rem auto;
+}
+
+.tishi>p {
+	border: 1px solid #016DD9;
+	background-color: #016DD9;
+	color: #FFFFFF;
+	margin-left: 10px;
+	padding: 8px 8px;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.tishi>p:first-child {
+	background-color: #FFFFFF;
+	color: #016DD9;
+	font-weight: 600;
+}
+
+</style>
+<style type="text/css">
+      @font-face {
+          font-family: "element-icons";
+          src: url('chrome-extension://moombeodfomdpjnpocobemoiaemednkg/fonts/element-icons.woff') format('woff'),
+          url('chrome-extension://moombeodfomdpjnpocobemoiaemednkg/fonts/element-icons.ttf ') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+      }
+  </style></head>
+<body oncontextmenu="event.returnValue=false" onselectstart="event.returnValue=false">
+<section class="content">
+	<div class="container">
+		<div class="view_top">
+			<img src="证书查询%20-%20李春保_fileses/logo_search.png">
+		</div>
+		
+	<!--职业证书-start-->
+	
+		<!--显示电子证书-->	
+		<div class="cert_box">
+			<div id="cert_info">
+				<div class="user_info">
+					<p>证书编号：231031323</p>
+					<p>姓  名：张西荣</p>
+					<p>身份证号：500241199107167415</p>
+					<p>作业项目：高处安装、维护、拆除作业</p>
+					<p>技能等级：高级</p>
+					<p>有效期限：2029年10月31日</p>
+				</div>
+				<div class="user_img"><img src="证书查询%20-%20李春保_fileses/zxr.png"></div>
+				<div class="intro">本电子证书由北京城建职业技能鉴定中心核发。本证书表明持证人已通过住房和城乡建设领域职业（技能）岗位评价考核，成绩合格。</div>
+				<div class="cert_code"><img src="证书查询%20-%20李春保_fileses/qrcode.php" class="qrcode" alt="二维码"><p>实时数据，扫码验证</p></div>
+
+				<div class="cert_unit">
+					<div><span>发证单位：</span><img src="证书查询%20-%20李春保_fileses/gongzhang.png" alt="code" class="code"></div>
+					<div style="margin-top: -35px;"><span>发证日期：</span><font id="publish_time">2023年10月31日</font></div>
+					<div><span>查询网址：</span>www.chengjian.org.cn</div>
+				</div>
+			</div>
+			<!--endprint-->
+			<div class="btns">
+				<input type="hidden" id="numeral" value="34278-李春保-高处安装、维护、拆除作业">
+				<a href="javascript:;" onclick="doPrint()">在线打印</a> 
+								<a href="javascript:;" onclick="downCert()" style="background-color: #FFB800;border: none;height: 39px;">下载电子证书</a>
+								<a href="javascript:history.back(-1);">返回</a>
+				<a href="javascript:history.back(-1);">退出</a>
+			</div>
+		</div>
+        		
+        
+		
+			<!--小本本开始-->
+			
+			
+	
+	</div>		
+		<!--小本本结束-->              
+
+</section>
+	
+<script type="text/javascript" src="证书查询%20-%20李春保_fileses/jquery-3.4.1.min.js.下载"></script>
+<script type="text/javascript" src="证书查询%20-%20李春保_fileses/common.js.下载"></script>
+<script type="text/javascript" src="证书查询%20-%20李春保_fileses/Print.js.下载"></script>
+<script type="text/javascript">
+document.oncontextmenu=new Function("event.returnValue=false");  
+document.onselectstart=new Function("event.returnValue=false"); 
+</script>
+
+<script src="证书查询%20-%20李春保_fileses/html2canvas.min.js.下载"></script>
+<script type="text/javascript">
+
+function doPrint() {
+	var html = window.document.body.innerHTML;
+	html2canvas(document.querySelector("#cert_info")).then(canvas => {
+		//将页面显示要打印的内容。
+		var innerHTML = "<img src='"+canvas.toDataURL("image/png")+"' style='height:100vh;margin:0 auto;display:block;'/>";
+		window.document.body.innerHTML = innerHTML;
+		//打印整个页面
+		setTimeout(function(){
+			var bdhtml = window.document.body.innerHTML;
+			window.print(bdhtml);
+			window.document.body.innerHTML=html;
+		},500);
+	});
+	return;
+}
+
+function doPrintBooks() {
+	var html = window.document.body.innerHTML;
+	html2canvas(document.querySelector("#Pcert_info")).then(canvas => {
+		//将页面显示要打印的内容。
+		var innerHTML = document.querySelector("#Pcert_info").innerHTML
+		window.document.body.innerHTML = innerHTML;
+		//打印整个页面
+		setTimeout(function(){
+			var bdhtml = window.document.body.innerHTML;
+			window.print(bdhtml);
+			window.document.body.innerHTML=html;
+		},500);
+	});
+	return;
+}
+
+
+function downCert(){
+	html2canvas(document.querySelector("#cert_info")).then(canvas => {
+		const imgUrl = canvas.toDataURL("image/png");
+		var numeral=$('#numeral').val();
+        // 如果浏览器支持msSaveOrOpenBlob方法（也就是使用IE浏览器的时候），那么调用该方法去下载图片
+        if (window.navigator.msSaveOrOpenBlob) {
+            var bstr = atob(imgUrl.split(',')[1]);
+            var n = bstr.length;
+            var u8arr = new Uint8Array(n);
+            while (n--) {
+                u8arr[n] = bstr.charCodeAt(n);
+            }
+            var blob = new Blob([u8arr]);
+            window.navigator.msSaveOrOpenBlob(blob, numeral + '.' + 'png');
+        } else {
+            // 这里就按照chrome等新版浏览器来处理
+            const a = document.createElement('a');
+            a.href = imgUrl;
+            a.setAttribute('download', numeral);
+         	// 触发点击
+            document.body.appendChild(a);
+            a.click();
+         	// 然后移除
+            document.body.removeChild(a);
+        }
+	});
+	return;
+}
+
+function downBook(){
+	html2canvas(document.querySelector(".Book_box")).then(canvas => {
+		const imgUrl = canvas.toDataURL("image/jpeg");
+		var numeral=$('#numeral').val();
+        // 如果浏览器支持msSaveOrOpenBlob方法（也就是使用IE浏览器的时候），那么调用该方法去下载图片
+        if (window.navigator.msSaveOrOpenBlob) {
+            var bstr = atob(imgUrl.split(',')[1]);
+            var n = bstr.length;
+            var u8arr = new Uint8Array(n);
+            while (n--) {
+                u8arr[n] = bstr.charCodeAt(n);
+            }
+            var blob = new Blob([u8arr]);
+            window.navigator.msSaveOrOpenBlob(blob, numeral +'-电子证书'+ '.' + 'jpg');
+        } else {
+            // 这里就按照chrome等新版浏览器来处理
+            const a = document.createElement('a');
+            a.href = imgUrl;
+            a.setAttribute('download', numeral);
+         	// 触发点击
+            document.body.appendChild(a);
+            a.click();
+         	// 然后移除
+            document.body.removeChild(a);
+        }
+	});
+	return;
+}
+
+
+
+function doCardPrint() {
+	var html = window.document.body.innerHTML;
+	html2canvas(document.querySelector(".cardnb")).then(canvas => {
+		//将页面显示要打印的内容。
+		var innerHTML = "<img src='"+canvas.toDataURL("image/png")+"' style='height:100vh;margin:0 auto;display:block;'/>";
+		window.document.body.innerHTML = innerHTML;
+		//打印整个页面
+		setTimeout(function(){
+			var bdhtml = window.document.body.innerHTML;
+			window.print(bdhtml);
+			window.document.body.innerHTML=html;
+		},500);
+	});
+	return;
+}
+
+function downCard(){
+	html2canvas(document.querySelector(".card")).then(canvas => {
+		const imgUrl = canvas.toDataURL("image/jpeg");
+		var numeral=$('#numeral').val();
+
+        // 如果浏览器支持msSaveOrOpenBlob方法（也就是使用IE浏览器的时候），那么调用该方法去下载图片
+        if (window.navigator.msSaveOrOpenBlob) {
+            var bstr = atob(imgUrl.split(',')[1]);
+            var n = bstr.length;
+            var u8arr = new Uint8Array(n);
+            while (n--) {
+                u8arr[n] = bstr.charCodeAt(n);
+            }
+            var blob = new Blob([u8arr]);
+            window.navigator.msSaveOrOpenBlob(blob, numeral + '.' + 'jpg');
+        } else {
+            // 这里就按照chrome等新版浏览器来处理
+            const a = document.createElement('a');
+            a.href = imgUrl;
+            a.setAttribute('download', numeral);
+         	// 触发点击
+            document.body.appendChild(a);
+            a.click();
+         	// 然后移除
+            document.body.removeChild(a);
+        }
+	});
+	return;
+}
+
+
+function downCardNb(){
+	html2canvas(document.querySelector(".cardnb")).then(canvas => {
+		const imgUrl = canvas.toDataURL("image/jpeg");
+		var numeral=$('#numeral').val();
+
+        // 如果浏览器支持msSaveOrOpenBlob方法（也就是使用IE浏览器的时候），那么调用该方法去下载图片
+        if (window.navigator.msSaveOrOpenBlob) {
+            var bstr = atob(imgUrl.split(',')[1]);
+            var n = bstr.length;
+            var u8arr = new Uint8Array(n);
+            while (n--) {
+                u8arr[n] = bstr.charCodeAt(n);
+            }
+            var blob = new Blob([u8arr]);javascript:;
+            window.navigator.msSaveOrOpenBlob(blob, numeral + '.' + 'jpg');
+        } else {
+            // 这里就按照chrome等新版浏览器来处理
+            const a = document.createElement('a');
+            a.href = imgUrl;
+            a.setAttribute('download', numeral);
+         	// 触发点击
+            document.body.appendChild(a);
+            a.click();
+         	// 然后移除
+            document.body.removeChild(a);
+        }
+	});
+	return;
+}
+
+
+
+function downXBook(){
+	html2canvas(document.querySelector("#Book")).then(canvas => {
+		const imgUrl = canvas.toDataURL("image/png");
+		var numeral=$('#numeral').val();
+        // 如果浏览器支持msSaveOrOpenBlob方法（也就是使用IE浏览器的时候），那么调用该方法去下载图片
+        if (window.navigator.msSaveOrOpenBlob) {
+            var bstr = atob(imgUrl.split(',')[1]);
+            var n = bstr.length;
+            var u8arr = new Uint8Array(n);
+            while (n--) {
+                u8arr[n] = bstr.charCodeAt(n);
+            }
+            var blob = new Blob([u8arr]);
+            window.navigator.msSaveOrOpenBlob(blob, numeral + '.' + 'png');
+        } else {
+            // 这里就按照chrome等新版浏览器来处理
+            const a = document.createElement('a');
+            a.href = imgUrl;
+            a.setAttribute('download', numeral);
+         	// 触发点击
+            document.body.appendChild(a);
+            a.click();
+         	// 然后移除
+            document.body.removeChild(a);
+        }
+	});
+	return;
+}
+
+
+
+
+function doPrintCards() {
+	//$("#Pcert_info").jqprint();
+	Print('.cardnb',{
+    	noPrint:'.buttons'
+    });
+	return;
+}
+
+function doPrintBook() {
+	//$("#Pcert_info").jqprint();
+	Print('#Pcert_info',{
+    	noPrint:'.Puser_photo'
+    });
+	return;
+}
+</script>
+
+
+</body></html>
